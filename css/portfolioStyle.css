@@ -1,0 +1,197 @@
+body{
+    background-color: #f2f5de;
+    font-family: 'Sansita Swashed', cursive;
+}
+h1{
+    font-size: xx-large;
+}
+h2{
+    font-size: x-large;
+}
+p{
+    font-size: larger;
+    font-family: sans;
+}
+
+#grid{
+    display: grid;
+    grid-template-rows: 5rem 40rem auto auto auto;
+    grid-template-areas: "navbar"
+                         "intro"
+                         "about"
+                         "projects"
+                         "footer";
+}
+
+ul.navbar{
+    grid-area: navbar;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.navbar li{
+    width: 25%;
+    text-align: center;
+    font-weight: bolder;
+    font-size: large;
+}
+.navbar a{
+    display: block;
+    background-color: #93ff96;
+    padding: 10px;
+    color: #6689a1;
+    text-decoration: none;
+}
+.navbar a:hover{
+    background-color: #b2ffa8;
+    color: #995d81;
+    transform: scale(1.1);
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#intro{
+    grid-area: intro;
+    text-align: center;
+    background-image: url(../media/Me.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#intro h1, #intro h2{
+    color: blueviolet;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+#about{
+    grid-area: about;
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+#about h2{
+    grid-column: 1/2;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #86e7b8;
+    padding: 2rem;
+}
+#about p{
+    grid-column: 2/3;
+    background-color: #d0ffb7;
+    padding: 2rem;
+}
+#gallery{
+    grid-area: projects;
+    display: grid;
+    grid-template-areas: "one two"
+                         "three four";
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    background-color: #d3ab9e;
+}
+#first{
+    grid-area: one;
+}
+#second{
+    grid-area: two;
+}
+#third{
+    grid-area: three;
+}
+#fourth{
+    grid-area: four;
+}
+footer{
+    grid-area: footer;
+    background-color: #33658a;
+    text-align: center;
+}
+#contact{
+    display: flex;
+    justify-content: center;
+}
+#contactOther{
+    margin: 5% 10%;
+}
+#contactOther ul{
+    list-style-type: none;
+    color: greenyellow;
+}
+#contactOther a{
+    color: gold;
+}
+#contactOther a:visited{
+    color:goldenrod;
+}
+#contactEmail{
+    margin: auto 5%;
+}
+@media (max-width: 1170px){
+    #grid{
+        grid-template-rows: 5rem 20rem auto auto auto;
+        grid-template-columns: 100%;
+    }
+    .navbar li{
+        margin: 0px;
+        width: 33.33%;
+        font-weight: bolder;
+        font-size: large;
+    }
+    #intro{
+        grid-area: intro;
+        text-align: center;
+        background-image: url(../media/Me.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        display: flex;
+    }
+    #introText{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        align-self: flex-end;
+        width: 100%;
+    }
+    #about{
+        grid-area: about;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+        margin-top: auto;
+    }
+    #about h2{
+        grid-row: 1/2;
+        grid-column: 1;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #86e7b8;
+        padding: 2rem;
+        margin-bottom: auto;
+    }
+    #about p{
+        grid-row: 2/3;
+        grid-column: 1;
+        background-color: #d0ffb7;
+        padding: 2rem;
+        margin: 0;
+    }
+    #gallery{
+        grid-area: projects;
+        display: grid;
+        grid-template-areas: "one" "two" "three" "four";
+    }
+}

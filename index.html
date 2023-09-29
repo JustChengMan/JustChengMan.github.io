@@ -1,7 +1,289 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Cheng Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
+    <script src="src/main.js" type="module"></script>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <section class="hero is-dark is-fullheight" id="about">
+    <div class="hero-head">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <span class="navbar-item"><h1 class="title">Justin Cheng</h1></span>
+            <a class="navbar-burger" id="burgerHome">
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </div>
+          <div class="navbar-menu">
+            <div class="navbar-end">
+              <span class="navbar-item">
+                <a class="button is-success is-inverted" href="#about">
+                  <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M575.8 255.5C575.8 273.5 560.8 287.6 543.8 287.6H511.8L512.5 447.7C512.5 450.5 512.3 453.1 512 455.8V472C512 494.1 494.1 512 472 512H456C454.9 512 453.8 511.1 452.7 511.9C451.3 511.1 449.9 512 448.5 512H392C369.9 512 352 494.1 352 472V384C352 366.3 337.7 352 320 352H256C238.3 352 224 366.3 224 384V472C224 494.1 206.1 512 184 512H128.1C126.6 512 125.1 511.9 123.6 511.8C122.4 511.9 121.2 512 120 512H104C81.91 512 64 494.1 64 472V360C64 359.1 64.03 358.1 64.09 357.2V287.6H32.05C14.02 287.6 0 273.5 0 255.5C0 246.5 3.004 238.5 10.01 231.5L266.4 8.016C273.4 1.002 281.4 0 288.4 0C295.4 0 303.4 2.004 309.5 7.014L564.8 231.5C572.8 238.5 576.9 246.5 575.8 255.5L575.8 255.5z"/></svg>
+                  </span>
+                  <span>About</span>
+                </a>
+              </span>
+              <a class="navbar-item" href="#gallery">Projects/Works</a>
+              <a class="navbar-item" href="#contact">Contact</a>
+            </div>
+          </div>
+          <div class="navbar-menu is-hidden-desktop" id="burgerMenuHome">
+            <div class="navbar-end">
+              <ul>
+                <li><a id="burgerLink" class="navbar-item is-active" href="#about">About</a></li>
+                <li><a id="burgerLink" class="navbar-item" href="#gallery">Projects/Works</a></li>
+                <li><a id="burgerLink" class="navbar-item" href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="hero-body">
+      <div class="columns has-text-centered is-vcentered">
+        <div class="column is-one-quarter"> 
+          <figure class="image">
+            <img class="is-rounded" src="media/mePro.jpg">
+          </figure>
+        </div>
+        <div class="column">
+          <p class="title is-1 has-text-weight-bold is-italic">Who am I?</p>
+          <p class="subtitle is-3 has-text-weight-light has-text-light">
+            I'm an aspiring Game Designer who also dabbles in sound design and music production. My goal as a game designer is to create immersive environments for players to consume themselves into and escape reality. Whether through unique gameplay, phenominal level design, or impecable sound design, I want players to unconsciously sink hours upon hours in a game I worked on. Furthermore, I would be ecstatic to find music I composed for a game to be recognizable throughout the gaming community! Growing up in Queens gave me plenty of oppurtunities to stregthen my work ethic and expanding out of Queens educated me in programming and designing games. Now I am ready to utilize these two skills to become an influence for you and your company. Please take a look at my <a class="button has-text-weight-bold is-light is-outlined" href="media/Cheng_Justin_Resume.pdf">resume</a> as you consider me as your next hire!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-foot">
+      <nav class="tabs is-boxed is-fullwidth">
+        <div class="container">
+          <ul>
+            <li class="is-active"><a href="#about">About</a></li>
+            <li><a href="#gallery">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <section class="hero is-warning is-fullheight" >
+    <div class="hero-head">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item"><h1 class="title">Justin Cheng</h1></a>
+            <a class="navbar-burger" id="burgerWork">
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </div>
+          <div class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item" href="#about">About</a>
+              <span class="navbar-item">
+                <a class="button is-success is-inverted" href="#gallery">
+                  <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M464 64C490.5 64 512 85.49 512 112V176C512 202.5 490.5 224 464 224H48C21.49 224 0 202.5 0 176V112C0 85.49 21.49 64 48 64H464zM448 128H320V160H448V128zM464 288C490.5 288 512 309.5 512 336V400C512 426.5 490.5 448 464 448H48C21.49 448 0 426.5 0 400V336C0 309.5 21.49 288 48 288H464zM192 352V384H448V352H192z"/></svg>
+                  </span>
+                  <span>Project/Works</span>
+                </a>
+              </span>
+              <a class="navbar-item" href="#contact">Contact</a>
+            </div>
+          </div>
+          <div class="navbar-menu is-hidden-desktop" id="burgerMenuWork">
+            <div class="navbar-end">
+              <ul>
+                <li><a id="burgerLink" class="navbar-item" href="#about">About</a></li>
+                <li><a id="burgerLink" class="navbar-item is-active" href="#gallery">Projects/Works</a></li>
+                <li><a id="burgerLink" class="navbar-item" href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="hero-body">
+      <div class="columns is-multiline" id="gallery">
+
+        <div class="column is-half" id="first"> 
+          <div class="box has-text-centered">
+            <h2 class="title has-text-weight-bold" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2603409685">ChangelingVR</h2>
+            <div class="columns is-centered">
+              <div class="column is-half">
+                <figure class="image is-fullwidth is-inline-block">
+                  <iframe width="400" height="300" src="https://www.youtube.com/embed/McTDBAkHhPs" title="ChangelingVR 2022 Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </figure>
+              </div>
+            </div>
+            <div class="box">
+              <p class="is-size-6">
+                A VR narrative mystery. This is a work in progress game by RIT. Last year, I worked as the sole sound design intern working on music, sound effects, and audio tunning for already established content and new ones designed this year. Throughout the internship, I have recorded and implemented Foley, composed a brand new background track for the mother's level, and synthesized sound effects that are not naturally found in real life. With the help of Audacity, Reaper, and Ableton Live, I was able to record, edit, and produce quality sound assets that allowed a player to truly be immersed in the game. This year, I was invited back as a level designer to development the final level of the game. With a team of 11, we developed multiple prototypes of game mechanics and level layouts, then conducted many playtests of those prototypes to narrow down and come up with a final product. I worked on a mechanic that would launch objects in the air like a catapult with the touch of a finger. I also programmed walls to react to the launched objects, with its final stage being shattered to pieces and floating away. From there, I dervived of an idea to use this mechanic that would fit into the lore of the game and designed a level layout that would utilize this mechanic. Overall, I am pleased to not only be able to contribute to immersing the player with audio but also in developing the final climatic level from scratch. Although the game is still in progress, please click <a href="https://www.changelingvr.com/"><strong>here</strong></a> to visit the game page and to download the work in progress builds!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-half" id="second"> 
+          <div class="box has-text-centered">
+            <h2 class="title has-text-weight-bold">Amateur Rhythm Game</h2>
+            <div class="columns is-centered">
+              <div class="column is-half">
+                <figure class="image is-fullwidth is-inline-block">
+                  <iframe width="400" height="300" src="https://www.youtube.com/embed/vW8YJqh9HeE" title="Amateur Rhythm Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </figure>
+              </div>
+            </div>
+            <div class="box">
+              <p class="is-size-6">
+                A casual rhythm game that had the idea of mobile gaming in mind. This project was made using Unity 2019 and assets created by team members. In the span of 10 weeks, my team and I built a rythm game that requires players to swipe the notes at the right time and with the correct direction. For this project, I was the main level designer and sound designer. Using Ableton, I composed three seperate minute long tracks to be used for each level. Then using Wwise, I implemented the song as well as the timing for level. I also constructed the arrays that determines where the note will appear and what direction does the player have to hit it in. Amatuer Rhythm Game was supposedly on mobile phones however, due to the time frame and other difficulties, it was out of scope and a desktop only version was made. However, we did keep the idea of having the game be a causal mobile game in mind. This is why you can see that each song is at most a minute and a half long and each level has its own local leaderboard and scoring. This gives the idea to players that they can pick up the game at anytime and play through a song quickly. There is even a pause function which allows the player to stop playing at moments noticed. Please click <a href="https://drive.google.com/file/d/15QrIa-BAROmitoo9PH1W0MfwKRrabZXe/view?usp=sharing"><strong>here</strong></a> to go to the google drive page and download the game for yourself.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-half" id="third"> 
+          <div class="box has-text-centered">
+            <h2 class="title has-text-weight-bold">DogFight</h2>
+            <div class="columns is-centered">
+              <div class="column is-half">
+                <figure class="image is-fullwidth is-inline-block">
+                  <iframe width="400" height="300" src="https://www.youtube.com/embed/I8U4_A5XhFQ" title="DogFight" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </figure>
+              </div>
+            </div>
+            <div class="box">
+              <p class="is-size-6">
+                A short film animation made by Tim Caravan. In the span of 6 weeks, I composed a score for the film's background music using Reaper. This was my second time working with this amazing artist and together we developed a film that was featured in RIT's theatre. The short is about a captain's fleet struggle in space. Working with the artist, I composed the score to match the actions of the film. From the battle sequence having multiple strings and brass fighting for the spotlight to a soft and solo string playing when the captain has met his match, many of the actions in the film work correspond to what the score is doing. This project was a lot of back and forth with the artist with a lot of editing being done to the film and therefore the score as well. However, working on this project really helps me understand the process that composers do whenever they write a score for a film or even a game cinematic. Hopefully, I will be able to compose and work with more artists and eventually score video game cinematics professionally. Please click <a href="https://youtu.be/I8U4_A5XhFQ"><strong>here</strong></a> to go to Youtube and watch the short animation for yourself!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-half" id="forth"> 
+          <div class="box has-text-centered">
+            <h2 class="title has-text-weight-bold">Stationary</h2>
+            <div class="columns is-centered">
+              <div class="column is-half">
+                <figure class="image is-fullwidth is-inline-block">
+                  <iframe width="400" height="300" src="https://www.youtube.com/embed/o-1bsTHeo84" title="Stationary Demo Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </figure>
+              </div>
+            </div>
+            <div class="box">
+              <p class="is-size-6">
+                A pixel horror game established in the world of Dresden. In the span of 4 weeks, my team and I built this demo using Unity and Wwise. This was a team project built using Unity and Wwise. Inspired by PT and many pixel horror games, Stationary has the player explore the police station as something is looming in the dark. The player's goal is to find enough clues to get help from the savior Dresden. My main goal for this game was to really immerse and draw the player into the horror. Within a couple of weeks, I composed and recorded suspenseful music that were inspired by other horror games like Murder House and Perishment and edited sound assets found on the public domain to create sound effects. I also composed the menu music that would be playing from the radio at a police station while the gaurds are relaxing with nothing to do. However, once the player starts the game, the music cuts and now all you hear is silence and diegetic sound, except for the text sound effect. Using Wwise, I was implemented the sound design and even created an option menu to give player control over the sound channels. Please click <a href="https://github.com/JustChengMan/Stationary"><strong>here</strong></a> to go to the game's github page and download the game for yourself!
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="hero-foot">
+      <nav class="tabs is-boxed is-fullwidth">
+        <div class="container">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li class="is-active"><a href="#gallery">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <section class="hero is-info is-fullheight" id="contact">
+    <div class="hero-head">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <span class="navbar-item"><h1 class="title">Justin Cheng</h1></span>
+            <a class="navbar-burger" id="burgerContact">
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </div>
+          <div class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item" href="#about">About</a>
+              <a class="navbar-item" href="#gallery">Projects/Works</a>
+              <span class="navbar-item">
+                <a class="button is-success is-inverted" href="#contact">
+                  <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M512 32H64C28.65 32 0 60.65 0 96v320c0 35.35 28.65 64 64 64h448c35.35 0 64-28.65 64-64V96C576 60.65 547.3 32 512 32zM176 128c35.35 0 64 28.65 64 64s-28.65 64-64 64s-64-28.65-64-64S140.7 128 176 128zM272 384h-192C71.16 384 64 376.8 64 368C64 323.8 99.82 288 144 288h64c44.18 0 80 35.82 80 80C288 376.8 280.8 384 272 384zM496 320h-128C359.2 320 352 312.8 352 304S359.2 288 368 288h128C504.8 288 512 295.2 512 304S504.8 320 496 320zM496 256h-128C359.2 256 352 248.8 352 240S359.2 224 368 224h128C504.8 224 512 231.2 512 240S504.8 256 496 256zM496 192h-128C359.2 192 352 184.8 352 176S359.2 160 368 160h128C504.8 160 512 167.2 512 176S504.8 192 496 192z"/></svg>
+                  </span>
+                  <span>Contact</span>
+                </a>
+              </span>
+            </div>
+          </div>
+          <div class="navbar-menu is-hidden-desktop" id="burgerMenuContact">
+            <div class="navbar-end">
+              <ul>
+                <li><a id="burgerLink" class="navbar-item" href="#about">About</a></li>
+                <li><a id="burgerLink" class="navbar-item" href="#gallery">Projects/Works</a></li>
+                <li><a id="burgerLink" class="navbar-item is-active" href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="hero-body">
+      <div class="columns has-text-centered is-vcentered">
+        <div class="column is-one-third"> 
+          <ul>
+            <li><h1 class="title">Reach Me At:</h1></li>
+            <li>
+              <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 352c-16.53 0-33.06-5.422-47.16-16.41L0 173.2V400C0 426.5 21.49 448 48 448h416c26.51 0 48-21.49 48-48V173.2l-208.8 162.5C289.1 346.6 272.5 352 256 352zM16.29 145.3l212.2 165.1c16.19 12.6 38.87 12.6 55.06 0l212.2-165.1C505.1 137.3 512 125 512 112C512 85.49 490.5 64 464 64h-416C21.49 64 0 85.49 0 112C0 125 6.01 137.3 16.29 145.3z"/></svg></span>
+              <span class="subtitle">jrc6513@rit.edu</span>
+            </li>
+            <li>
+              <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M304 0h-224c-35.35 0-64 28.65-64 64v384c0 35.35 28.65 64 64 64h224c35.35 0 64-28.65 64-64V64C368 28.65 339.3 0 304 0zM192 480c-17.75 0-32-14.25-32-32s14.25-32 32-32s32 14.25 32 32S209.8 480 192 480zM304 64v320h-224V64H304z"/></svg></span>
+              <span class="subtitle">(917)-476-3525</span>
+            </li>
+            <li>
+              <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></span>
+              <span class="subtitle"><a class="button has-text-white has-text-weight-bold is-link is-outlined" href="https://www.linkedin.com/in/justcheng2/">LinkedIn Page</a></span>
+            </li>
+          </ul>
+        </div>
+        <div class="column"> 
+          <figure class="image">
+            <img class="is-rounded" src="media/Me.jpg">
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-foot">
+      <nav class="tabs is-boxed is-fullwidth">
+        <div class="container">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Projects</a></li>
+            <li class="is-active"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
 </body>
-</html>
